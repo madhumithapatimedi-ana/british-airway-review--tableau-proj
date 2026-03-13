@@ -1,74 +1,56 @@
 # ✈️ British Airways Reviews Analysis – Tableau Dashboard
 
-## 📌 Project Overview
+## ❓ The Problem
 
-This project presents an interactive data visualization dashboard built using **Tableau** to analyze customer reviews of British Airways.
+"Where is the disconnect between British Airways' premium branding and actual passenger satisfaction?"
 
-The objective of this project is to uncover insights related to customer satisfaction, service quality, travel experience, and overall airline performance using visual analytics. The dashboard transforms raw review data into meaningful insights to support data-driven evaluation of customer feedback.
+Airlines often struggle to pinpoint exactly which part of the journey ruins the customer experience. I initiated this project to answer:
 
----
+The Loyalty Gap: Does a high "Cabin Staff" rating compensate for poor "Food & Beverage" or "Seat Comfort"?
 
-## 🎯 Objectives
+Class Disparity: Is the satisfaction premium in Business Class significantly higher than in Economy, or are all passengers equally frustrated?
 
-- Analyze overall customer rating trends  
-- Identify strengths and weaknesses across service categories  
-- Evaluate satisfaction across different travel classes  
-- Compare ratings based on traveler type  
-- Visualize key performance indicators for customer satisfaction  
+The NPS Trigger: What is the primary "deal-breaker" that leads a passenger to click "Not Recommended"?
 
 ---
 
-## 🛠 Tools & Technologies Used
+## 📂 The Data
 
-- Tableau  
-- Data Cleaning & Preparation  
-- Calculated Fields  
-- Filters & Parameters  
-- Interactive Dashboard Design  
-- Data Visualization Best Practices  
+The analysis used a dataset of verified British Airways reviews, categorized by travel class, aircraft type, and specific service ratings.
 
----
+Data Preparation & Transformation:
 
-## 📊 Dashboard Features
+Categorical Binning: Grouped diverse traveler types (Solo, Couple, Family) to identify specific demographic pain points.
 
-- Overall Rating KPI Summary  
-- Service Category Breakdown:
-  - Cabin Staff  
-  - Food & Beverage  
-  - Seat Comfort  
-  - Entertainment  
-- Traveler Type Analysis  
-- Class-wise Rating Comparison  
-- Recommendation Analysis  
-- Interactive Filters  
-- Clean and intuitive dashboard layout  
+Calculated Fields: Developed custom Tableau formulas to calculate "Average Satisfaction Scores" across five distinct service dimensions.
+
+Logic Filters: Created "Recommendation Status" toggles to isolate the specific feedback of detractors versus promoters.
+
+Data Scrubbing: Standardized "Seat Class" naming conventions to ensure accurate comparisons between Premium Economy and standard Economy.
 
 ---
 
-## 📂 Dataset Information
+## 📊 The Insights
 
-The dataset includes:
+Using Tableau's interactive environment, I uncovered three critical trends:
 
-- Review Date  
-- Overall Rating  
-- Cabin Staff Rating  
-- Food & Beverage Rating  
-- Seat Comfort Rating  
-- Entertainment Rating  
-- Traveler Type  
-- Seat Class  
-- Recommendation Status  
+The "Soft Product" Paradox: Cabin Staff consistently receive higher ratings than "Hardware" (Seat Comfort and Entertainment). Passengers love the people, but are frustrated by the planes.
 
-The data was cleaned and structured before visualization.
+Business Class Sensitivity: Business Class passengers are significantly more critical of "Food & Beverage" than Economy passengers, suggesting that BA is not meeting the expectations of its highest-paying tier.
+
+The Tipping Point: Analysis showed that if "Seat Comfort" falls below a 3/5 rating, the likelihood of a "Recommended" status drops by over 70%, regardless of how good the staff or food were.
 
 ---
 
-## 📈 Key Insights
+## 💡 The Conclusion
 
-- Identified service areas with comparatively lower ratings  
-- Observed rating differences between Economy and Business class passengers  
-- Analyzed customer recommendation patterns  
-- Highlighted trends in overall traveler satisfaction  
+To improve passenger retention and brand perception, British Airways should:
+
+Prioritize Fleet Modernization: Since "Seat Comfort" is the primary driver of negative recommendations, capital expenditure should be focused on cabin retrofits rather than catering tweaks.
+
+Tiered Catering Overhaul: Address the specific dissatisfaction in Business Class dining to justify the premium price point and compete with "Middle East Three" (ME3) carriers.
+
+Targeted Loyalty Recovery: Use the "Traveler Type" insights to create specific recovery offers for "Family" travelers, who showed the highest volatility in satisfaction scores.
 
 ---
 
@@ -81,7 +63,6 @@ The data was cleaned and structured before visualization.
 - Communicating insights through visual storytelling  
 
 ---
-
 
 ## 🤝 Connect With Me
 
